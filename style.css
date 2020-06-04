@@ -1,0 +1,80 @@
+bode
+{
+font-size:20px;
+}
+.collapse {
+  background-color: gray;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+}
+
+.active, .collapse:hover {
+  background-color: darkslategray;
+}
+
+.collapse:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+#aes
+{
+display: none;
+}
+#rsa
+{
+display: none;
+}
+#tdes
+{
+display: none;
+}
+h2
+{
+text-align:center;
+font-size: 80px;
+padding: 1%;
+margin:1%;
+border: 2px solid black;
+}
+
+.e {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  background-color: tomato;
+  font-size: 20px;
+}
+
+.d {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  background-color: dodgerblue;
+  font-size: 20px;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 20px;
+}

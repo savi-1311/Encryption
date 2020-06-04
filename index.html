@@ -3,51 +3,65 @@
 <head>
 <meta charset="utf-8">
 <title>Encryption</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script src="index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-<h1>AES Encyption</h1>
+<h2>Encryption</h2>
+<button class="collapse" id="aesc" onclick="openaes()">AES Encryption</button>
+<div id="aes">
+	<br><br>
 <input type="text" placeholder="Enter the key" id="keyInput1">
 <br><br>
 <input type="text" placeholder="Enter the message" id="msgInput1">
 <br><br>		
-<button onclick="encrypt1()">Encrypt</button>
+<button class="e" onclick="encrypt1()">Encrypt</button>
 <br><br>
 <div id="evalue1"></div>
 <br><br>
-<button onclick="decrypt1()">Decrypt</button>
+<button class="d" onclick="decrypt1()">Decrypt</button>
 <br><br>
 <div id="dvalue1"></div>
 <br><br>
 <script src="aes.js"></script>
+</div>
+<br><br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/cryptico.min.js"></script>
-<h1>RSA Encryption</h1>
-<br>
+<button class="collapse" id="rsac" onclick="openrsa()">RSA Encryption</button>
+<div id="rsa">
+<br><br>
 <input type="text" placeholder="Enter the message" id="msgInput2">
 <br><br>		
-<button onclick="encrypt2()">Encrypt</button>
+<button class="e" onclick="encrypt2()">Encrypt</button>
 <br><br>
 <div id="evalue2"></div>
 <br><br>
-<button onclick="decrypt2()">Decrypt</button>
+<button class="d" onclick="decrypt2()">Decrypt</button>
 <br><br>
 <div id="dvalue2"></div>
 <br><br>
 <script src="rsa.js"></script>
+</div>
+<br><br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
-<h1>TripleDES Encyption</h1>
+<button class="collapse" id="tdesc" onclick="opentdes()">TripleDES Encyption</button>
+<div id="tdes">
+	<br><br>
 <input type="text" placeholder="Enter the key" id="keyInput3">
 <br><br>
 <input type="text" placeholder="Enter the message" id="msgInput3">
 <br><br>		
-<button onclick="encrypt3()">Encrypt</button>
+<button class="e" onclick="encrypt3()">Encrypt</button>
 <br><br>
 <div id="evalue3"></div>
 <br><br>
-<button onclick="decrypt3()">Decrypt</button>
+<button class="d" onclick="decrypt3()">Decrypt</button>
 <br><br>
 <div id="dvalue3"></div>
 <br><br>
 <script src="TripleDES.js"></script>
+</div>
+<br><br>
 </body>
 </html>
