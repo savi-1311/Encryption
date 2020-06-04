@@ -6,18 +6,33 @@
 </head>
 <body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-<input type="text" placeholder="Enter the key" id="keyInput">
+	<h1>AES Encyption</h1>
+<input type="text" placeholder="Enter the key" id="keyInput1">
 <br><br>
-<input type="text" placeholder="Enter the message" id="msgInput">
+<input type="text" placeholder="Enter the message" id="msgInput1">
 <br><br>		
 <button onclick="encrypt1()">Encrypt</button>
 <br><br>
-<div id="evalue"></div>
+<div id="evalue1"></div>
 <br><br>
 <button onclick="decrypt1()">Decrypt</button>
 <br><br>
-<div id="dvalue"></div>
-
+<div id="dvalue1"></div>
+<br><br>
 <script src="aes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/cryptico.min.js"></script>
+<h1>RSA Encryption</h1>
+<br>
+<input type="text" placeholder="Enter the message" id="msgInput2">
+<br><br>		
+<button onclick="encrypt2()">Encrypt</button>
+<br><br>
+<div id="evalue2"></div>
+<br><br>
+<button onclick="decrypt2()">Decrypt</button>
+<br><br>
+<div id="dvalue2"></div>
+<br><br>
+<script src="rsa.js"></script>
 </body>
 </html>
