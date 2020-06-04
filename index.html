@@ -5,8 +5,8 @@
 <title>Encryption</title>
 </head>
 <body>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-	<h1>AES Encyption</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<h1>AES Encyption</h1>
 <input type="text" placeholder="Enter the key" id="keyInput1">
 <br><br>
 <input type="text" placeholder="Enter the message" id="msgInput1">
@@ -34,5 +34,20 @@
 <div id="dvalue2"></div>
 <br><br>
 <script src="rsa.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<h1>TripleDES Encyption</h1>
+<input type="text" placeholder="Enter the key" id="keyInput3">
+<br><br>
+<input type="text" placeholder="Enter the message" id="msgInput3">
+<br><br>		
+<button onclick="encrypt3()">Encrypt</button>
+<br><br>
+<div id="evalue3"></div>
+<br><br>
+<button onclick="decrypt3()">Decrypt</button>
+<br><br>
+<div id="dvalue3"></div>
+<br><br>
+<script src="TripleDES.js"></script>
 </body>
 </html>
